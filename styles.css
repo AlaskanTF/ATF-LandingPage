@@ -1,0 +1,73 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;  /* Monospace font for a terminal vibe */
+  background-color: #000;  /* Black background */
+  color: #00FF00;          /* Green text for hacker/terminal feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 18px;
+}
+
+.landing-container {
+  max-width: 600px;         /* Keep the width narrow like a terminal window */
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #111;  /* Dark grey background to distinguish the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);  /* Subtle shadow for depth */
+  border: 1px solid #00FF00;  /* Green border for extra effect */
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #00FF00;  /* Bright green header for emphasis */
+  text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;  /* Glowing effect */
+}
+
+p {
+  font-size: 1.2rem;
+  color: #00FF00;  /* Green text for the description */
+  margin-top: 10px;
+  text-shadow: 0 0 5px #00FF00, 0 0 15px #00FF00;  /* Subtle glowing effect */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;       /* Stack buttons vertically */
+  align-items: center;          /* Center the buttons horizontally */
+  justify-content: center;      /* Center the buttons vertically */
+  gap: 15px;                    /* Add space between buttons */
+  margin-top: 20px;              /* Add space above the buttons */
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  background-color: transparent;  /* Transparent background */
+  color: #00FF00;  /* Green text for buttons */
+  font-size: 1.2rem;
+  border: 2px solid #00FF00;  /* Green border */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;  /* Monospace font */
+}
+
+.btn:hover {
+  background-color: #00FF00;  /* Green background on hover */
+  color: #000;  /* Black text on hover */
+  text-shadow: 0 0 10px #000, 0 0 20px #000;  /* Darker glowing effect */
+}
