@@ -53,18 +53,6 @@ window.addEventListener('resize', () => {
   canvas.height = window.innerHeight;
 });
 
-// Function to handle button clicks with confirmation and redirect
-function handleButtonClick(event, url) {
-  event.preventDefault();  // Prevent immediate navigation
-  const confirmationMessage = `You are about to visit: ${url}`;
-
-  // Show a custom message (could be a confirmation or alert)
-  if (window.confirm(confirmationMessage)) {
-    // After confirmation, navigate to the desired link
-    window.location.href = url;
-  }
-}
-
 // Attach event listeners to the buttons for custom handling
 document.getElementById('blogButton').addEventListener('click', function(event) {
   handleButtonClick(event, 'https://blog.alaskantf.com');
